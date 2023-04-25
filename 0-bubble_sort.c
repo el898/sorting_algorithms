@@ -15,17 +15,17 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j, temp;
+	size_t i, n, new_n;
 	int swap;
 
 	if (array == NULL || size < 2)
 		return;
 
-	j = size;
-	while (j > 0)
+	n = size;
+	while (n > 0)
 	{
-		temp = 0;
-		for (i = 0; i < j - 1; i++)
+		new_n = 0;
+		for (i = 0; i < n - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
@@ -33,12 +33,12 @@ void bubble_sort(int *array, size_t size)
 				swap = array[i];
 				array[i] = array[i + 1];
 				array[i + 1] = swap;
-				temp = i + 1;
+				new_n = i + 1;
 
 				/* Print the array after each swap */
 				print_array(array, size);
 			}
 		}
-		j = temp;
+		n = new_n;
 	}
 }
