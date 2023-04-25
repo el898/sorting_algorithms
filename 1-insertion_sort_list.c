@@ -2,8 +2,9 @@
 
 /**
  * insertion_sort_list - sorts a doubly linked list of integers in ascending
- * order using the Insertion sort algorithm
- * @list: pointer to pointer to head of the list
+ * order
+ * @list: pointer to  a pointer to head of the list
+ * Return: void.
  **/
 void insertion_sort_list(listint_t **list)
 {
@@ -11,6 +12,7 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	listint_t *curr = (*list)->next;
+
 	while (curr != NULL)
 	{
 		listint_t *tmp = curr->next;
