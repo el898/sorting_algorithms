@@ -44,7 +44,8 @@ size_t partition(int *array, ssize_t lo, ssize_t hi, size_t size)
 }
 
 /**
- * quicksort - sorts a partition of an array of integers using the Lomuto scheme.
+ * quicksort - sorts a partition of an array of integers
+ * using the Lomuto scheme.
  * @array: the array to sort
  * @lo: the lowest index of the partition to sort
  * @hi: the highest index of the partition to sort
@@ -66,7 +67,7 @@ void quicksort(int *array, ssize_t lo, ssize_t hi, size_t size)
 }
 
 /**
- * quick_sort - sorts an array of integers in ascending order using the Quick 
+ * quick_sort - sorts an array of integers in ascending order using the Quick
  * sort algorithm with the Lomuto partition scheme.
  */
 
