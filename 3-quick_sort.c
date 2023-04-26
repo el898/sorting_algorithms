@@ -69,6 +69,9 @@ void quicksort(int *array, ssize_t lo, ssize_t hi, size_t size)
 /**
  * quick_sort - sorts an array of integers in ascending order using the Quick
  * sort algorithm with the Lomuto partition scheme.
+ * @array: The array to sort
+ * @size: The size of the array
+ * Return: void
  */
 
 void quick_sort(int *array, size_t size)
