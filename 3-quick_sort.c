@@ -2,16 +2,13 @@
 #include <stdio.h>
 
 /**
- * partition - selects a pivot and partitions the array into two sub-arrays,
- * one with elements less than or equal to the pivot, and the other with
- * elements greater than the pivot, using the Lomuto scheme.
- * @array: the array to partition
- * @lo: the lowest index of the partition to sort
- * @hi: the highest index of the partition to sort
- * @size: the size of the array
- * Return: the index of the partition
+ * partition - finds the partition for the quicksort using the Lomuto scheme
+ * @array: array to sort
+ * @lo: lowest index of the partition to sort
+ * @hi: highest index of the partition to sort
+ * @size: size of the array
+ * Return: index of the partition
  */
-
 size_t partition(int *array, ssize_t lo, ssize_t hi, size_t size)
 {
 	ssize_t i, j;
@@ -45,14 +42,12 @@ size_t partition(int *array, ssize_t lo, ssize_t hi, size_t size)
 
 /**
  * quicksort - sorts a partition of an array of integers
- * using the Lomuto scheme.
- * @array: the array to sort
- * @lo: the lowest index of the partition to sort
- * @hi: the highest index of the partition to sort
- * @size: the size of the array
+ * @array: array to sort
+ * @lo: lowest index of the partition to sort
+ * @hi: highest index of the partition to sort
+ * @size: size of the array
  * Return: void
  */
-
 void quicksort(int *array, ssize_t lo, ssize_t hi, size_t size)
 {
 	ssize_t pivot;
@@ -67,13 +62,13 @@ void quicksort(int *array, ssize_t lo, ssize_t hi, size_t size)
 }
 
 /**
- * quick_sort - sorts an array of integers in ascending order using the Quick
- * sort algorithm with the Lomuto partition scheme.
+ * quick_sort - sorts an array of integers in ascending order using the
+ * Quick sort algorithm
  * @array: The array to sort
  * @size: The size of the array
+ *
  * Return: void
  */
-
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
